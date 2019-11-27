@@ -36,7 +36,7 @@ export default function Profile() {
 
         <Row>
           <Label>Experiência</Label>
-          <Value>152exp</Value>
+          <Value>152xp</Value>
         </Row>
       </DataInfo>
     </Container>
