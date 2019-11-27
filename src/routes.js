@@ -9,6 +9,13 @@ import Image, {ImagePageNavigationOptions} from './pages/Image';
 import Welcome from './pages/Welcome';
 import Journey from './pages/Journey';
 
+import {Login, LoginNavigationOptions} from './pages/Login';
+import {Glossary, GlossaryNavigationOptions} from './pages/Glossary';
+import {
+    WordDescription,
+    WordDescriptionNavigationOptions,
+}
+
 const TabNavigator = createBottomTabNavigator({
   Home: Welcome,
   Jornada: Journey,
@@ -36,6 +43,18 @@ const routes = {
     screen: Image,
     navigationOptions: ImagePageNavigationOptions,
   },
+    Login: {
+        screen: Login,
+        navigationOptions: LoginNavigationOptions,
+    },
+    Glossary: {
+        screen: Glossary,
+        navigationOptions: GlossaryNavigationOptions,
+    },
+    WordDescription: {
+        screen: WordDescription,
+        navigationOptions: WordDescriptionNavigationOptions,
+    },
 };
 
 const App = createStackNavigator(routes, config);
