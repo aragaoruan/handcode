@@ -16,6 +16,10 @@ import {
   WordDescriptionNavigationOptions,
 } from './pages/WordDescription';
 
+import Community from './pages/Community';
+import Profile from './pages/Profile';
+
+
 const TabNavigator = createBottomTabNavigator({
   Home: Welcome,
   Jornada: Journey,
