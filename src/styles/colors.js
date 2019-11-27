@@ -7,6 +7,7 @@ export default {
     darkColor: '#007e6f',
     textColor: '#fafafa',
     grayTextColor: 'gray',
+    blackTextColor: '#272221',
   },
 
   secondary: {

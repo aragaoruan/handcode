@@ -34,11 +34,24 @@ const config = {
 };
 
 import {Login, LoginNavigationOptions} from './pages/Login';
+import {Glossary, GlossaryNavigationOptions} from './pages/Glossary';
+import {
+  WordDescription,
+  WordDescriptionNavigationOptions,
+} from './pages/WordDescription';
 
 const routes = {
   Login: {
     screen: Login,
     navigationOptions: LoginNavigationOptions,
+  },
+  Glossary: {
+    screen: Glossary,
+    navigationOptions: GlossaryNavigationOptions,
+  },
+  WordDescription: {
+    screen: WordDescription,
+    navigationOptions: WordDescriptionNavigationOptions,
   },
 };
 
