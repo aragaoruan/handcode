@@ -1,11 +1,16 @@
 import React from 'react';
-
 import Container from '../../components/Container';
-import {Title} from './styles';
+
+const page = 'AULAS';
+export function ClassListNavigationOptions() {
+  return {
+    headerTitle: page,
+  };
+}
 
 import List from '../../components/List';
 
-export default function Journey() {
+export default function ClassList() {
   const DATA = [
     {
       id: 1,
@@ -24,11 +29,5 @@ export default function Journey() {
     },
   ];
 
-  return (
-    <Container>
-      <Title>Jornada</Title>
-
-      <List data={DATA} />
-    </Container>
-  );
+  return <Container>{<List data={DATA} />}</Container>;
 }
