@@ -16,12 +16,12 @@ export const Border = styled.View`
 `;
 
 export const Button = styled.TouchableOpacity`
-  background: #6bd4c1;
+  background: #edf3f7;
   margin-left: 10px;
   justify-content: center;
   border-radius: 4px;
   padding: 0 14px;
-  height: 30px;
+  height: 40px;
 `;
 
 export const NameButton = styled.Text``;
@@ -42,7 +42,7 @@ export const TitleGlosario = styled.Text`
 `;
 
 export const ButtonGlosario = styled.TouchableOpacity`
-  background: #6bd4c1;
+  background: #edf3f7;
   margin-left: 10px;
   justify-content: center;
   border-radius: 4px;

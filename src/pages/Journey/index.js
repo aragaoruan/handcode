@@ -13,6 +13,21 @@ export default function Journey({navigation}) {
       description:
         'Embora as vezes não percebemos, utilizamos algoritmos no nosso dia-a-dia e não sabemos. Para a execução de alguma tarefa ou mesmo resolver algum problema, muitas vezes inconscientemente executamos algoritmos.',
     },
+    {
+      id: 2,
+      name: 'Php',
+      description: 'Laravel',
+    },
+    {
+      id: 3,
+      name: 'Node',
+      description: 'Express',
+    },
+    {
+      id: 4,
+      name: 'ReactJs',
+      description: 'ReactJs',
+    },
   ];
 
   return (

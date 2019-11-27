@@ -9,7 +9,7 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 40px;
+  font-size: ${fonts.bigger};
   font-weight: bold;
   color: ${colors.primary.color};
   margin: 5px 0 10px 0;
@@ -36,14 +36,14 @@ export const Row = styled.View`
 `;
 
 export const Label = styled.Text`
-  font-size: 25px;
+  font-size: ${fonts.regular};
   font-weight: bold;
   width: 150px;
   line-height: 30px;
 `;
 
 export const Value = styled.Text`
-  font-size: 25px;
+  font-size: ${fonts.regular};
   width: 150px;
   line-height: 30px;
 `;

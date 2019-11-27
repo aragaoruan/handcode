@@ -15,7 +15,27 @@ export default function ClassList({navigation}) {
     {
       id: 1,
       name: 'Aula 1',
-      description: 'Algoritmo Recepcionista de Cinema',
+      description: '...',
+    },
+    {
+      id: 2,
+      name: 'Aula 2',
+      description: '...',
+    },
+    {
+      id: 3,
+      name: 'Aula 3',
+      description: '...',
+    },
+    {
+      id: 4,
+      name: 'Aula 4',
+      description: '...',
+    },
+    {
+      id: 5,
+      name: 'Aula 5',
+      description: '...',
     },
   ];
 

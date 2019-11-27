@@ -16,7 +16,7 @@ export default function Profile() {
   return (
     <Container>
       <AvatarArea>
-        <Icon name="user-circle-o" size={200} />
+        <Icon name="user-circle-o" size={100} />
         <Title>Olá Patrick!</Title>
       </AvatarArea>
 

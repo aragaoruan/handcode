@@ -1,9 +1,10 @@
 import styled from 'styled-components/native';
+import {colors} from '../../../styles';
 
 export const Container = styled.TouchableOpacity`
   padding: 20px;
   border-radius: 4px;
-  background: #fff;
+  background: #edf3f7;
   margin-bottom: 15px;
 `;
 
