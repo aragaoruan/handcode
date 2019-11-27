@@ -1,12 +1,25 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 
-// import { Container } from './styles';
+import Container from '../../components/Container';
+import {Title} from './styles';
 
-export default function Journey() {
+import List from '../../components/List';
+
+export default function Journey({navigation}) {
+  const DATA = [
+    {
+      id: 1,
+      name: 'Algoritmo',
+      description:
+        'Embora as vezes não percebemos, utilizamos algoritmos no nosso dia-a-dia e não sabemos. Para a execução de alguma tarefa ou mesmo resolver algum problema, muitas vezes inconscientemente executamos algoritmos.',
+    },
+  ];
+
   return (
-    <View>
-      <Text>Jornada</Text>
-    </View>
+    <Container>
+      <Title>Jornada</Title>
+
+      <List namepage="ClassList" navigation={navigation} data={DATA} />
+    </Container>
   );
 }

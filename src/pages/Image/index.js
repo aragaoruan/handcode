@@ -3,14 +3,21 @@ import {Image} from 'react-native';
 
 import {Container} from './styles';
 
-export default function Welcome() {
+const page = '';
+export function ImagePageNavigationOptions() {
+  return {
+    headerTitle: page,
+  };
+}
+
+export default function ImagePage() {
   return (
     <Container>
       <Image
         style={{width: 300, height: 300}}
         source={{
           uri:
-            'https://static.wixstatic.com/media/3e2a7a_93095429e0634712b5a42f49af46b508~mv2.gif',
+            'https://www.portalacesse.com/wp-content/uploads/2017/10/emoji-libras-apple1017.jpg',
         }}
       />
     </Container>

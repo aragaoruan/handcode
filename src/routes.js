@@ -1,37 +1,13 @@
-// import {createAppContainer} from 'react-navigation';
-// import {createBottomTabNavigator} from 'react-navigation-tabs';
-
-// import Welcome from './pages/Welcome';
-// import Journey from './pages/Journey';
-// import Login from './pages/Login';
-
-// const TabNavigator = createBottomTabNavigator({
-//   Home: Login,
-//   Jornada: Journey,
-// });
-
-// export default createAppContainer(TabNavigator);
-
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
+import {createBottomTabNavigator} from 'react-navigation-tabs';
 
-import colors from './styles/colors';
+import ClassList, {ClassListNavigationOptions} from './pages/ClassList';
+import Class, {ClassNavigationOptions} from './pages/Class';
+import Image, {ImagePageNavigationOptions} from './pages/Image';
 
-const config = {
-  initialRouteName: 'Login',
-  defaultNavigationOptions: {
-    headerTitle: 'Login ',
-    headerStyle: {
-      backgroundColor: colors.primary.color,
-    },
-    headerTintColor: colors.primary.textColor,
-    headerTitleStyle: {
-      fontWeight: 'normal',
-    },
-    headerBackTitle: null,
-  },
-  mode: 'card',
-};
+import Welcome from './pages/Welcome';
+import Journey from './pages/Journey';
 
 import {Login, LoginNavigationOptions} from './pages/Login';
 import {Glossary, GlossaryNavigationOptions} from './pages/Glossary';
@@ -40,15 +16,47 @@ import {
   WordDescriptionNavigationOptions,
 } from './pages/WordDescription';
 
+import Community from './pages/Community';
+import Profile from './pages/Profile';
+
+const TabNavigator = createBottomTabNavigator({
+  // Home: Welcome,
+  Jornada: Journey,
+  Glossary: Glossary,
+  Community: Community,
+  Profile: Profile,
+});
+
+const config = {
+  initialRouteName: 'Login',
+  mode: 'card',
+};
+
 const routes = {
+  Main: {
+    screen: TabNavigator,
+    navigationOptions: {header: null},
+  },
+  ClassList: {
+    screen: ClassList,
+    navigationOptions: ClassListNavigationOptions,
+  },
+  Class: {
+    screen: Class,
+    navigationOptions: ClassNavigationOptions,
+  },
+  Image: {
+    screen: Image,
+    navigationOptions: ImagePageNavigationOptions,
+  },
   Login: {
     screen: Login,
     navigationOptions: LoginNavigationOptions,
   },
-  Glossary: {
-    screen: Glossary,
-    navigationOptions: GlossaryNavigationOptions,
-  },
+  // Glossary: {
+  //   screen: Glossary,
+  //   navigationOptions: GlossaryNavigationOptions,
+  // },
   WordDescription: {
     screen: WordDescription,
     navigationOptions: WordDescriptionNavigationOptions,
