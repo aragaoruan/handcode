@@ -3,6 +3,7 @@ import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 
 import ClassList, {ClassListNavigationOptions} from './pages/ClassList';
+import Class, {ClassNavigationOptions} from './pages/Class';
 
 import Welcome from './pages/Welcome';
 import Journey from './pages/Journey';
@@ -13,7 +14,7 @@ const TabNavigator = createBottomTabNavigator({
 });
 
 const config = {
-  initialRouteName: 'ClassList',
+  initialRouteName: 'Class',
   mode: 'card',
 };
 
@@ -25,6 +26,10 @@ const routes = {
   ClassList: {
     screen: ClassList,
     navigationOptions: ClassListNavigationOptions,
+  },
+  Class: {
+    screen: Class,
+    navigationOptions: ClassNavigationOptions,
   },
 };
 
