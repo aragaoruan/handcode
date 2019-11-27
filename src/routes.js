@@ -20,7 +20,7 @@ import Community from './pages/Community';
 import Profile from './pages/Profile';
 
 const TabNavigator = createBottomTabNavigator({
-  Home: Welcome,
+  // Home: Welcome,
   Jornada: Journey,
   Glossary: Glossary,
   Community: Community,
