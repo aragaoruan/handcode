@@ -12,17 +12,18 @@ import Journey from './pages/Journey';
 import {Login, LoginNavigationOptions} from './pages/Login';
 import {Glossary, GlossaryNavigationOptions} from './pages/Glossary';
 import {
-    WordDescription,
-    WordDescriptionNavigationOptions,
-}
+  WordDescription,
+  WordDescriptionNavigationOptions,
+} from './pages/WordDescription';
 
 const TabNavigator = createBottomTabNavigator({
   Home: Welcome,
   Jornada: Journey,
+  Glossary: Glossary,
 });
 
 const config = {
-  initialRouteName: 'Main',
+  initialRouteName: 'Login',
   mode: 'card',
 };
 
@@ -43,18 +44,18 @@ const routes = {
     screen: Image,
     navigationOptions: ImagePageNavigationOptions,
   },
-    Login: {
-        screen: Login,
-        navigationOptions: LoginNavigationOptions,
-    },
-    Glossary: {
-        screen: Glossary,
-        navigationOptions: GlossaryNavigationOptions,
-    },
-    WordDescription: {
-        screen: WordDescription,
-        navigationOptions: WordDescriptionNavigationOptions,
-    },
+  Login: {
+    screen: Login,
+    navigationOptions: LoginNavigationOptions,
+  },
+  // Glossary: {
+  //   screen: Glossary,
+  //   navigationOptions: GlossaryNavigationOptions,
+  // },
+  WordDescription: {
+    screen: WordDescription,
+    navigationOptions: WordDescriptionNavigationOptions,
+  },
 };
 
 const App = createStackNavigator(routes, config);

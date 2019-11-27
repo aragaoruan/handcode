@@ -44,7 +44,7 @@ export function Login({navigation}) {
         <ButtonContainer>
           <LoginButton
             onPress={() => {
-              navigation.navigate('Glossary');
+              navigation.navigate('Main');
             }}>
             <ButtonText>Entrar</ButtonText>
           </LoginButton>
