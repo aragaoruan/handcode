@@ -4,6 +4,7 @@ import {createBottomTabNavigator} from 'react-navigation-tabs';
 
 import ClassList, {ClassListNavigationOptions} from './pages/ClassList';
 import Class, {ClassNavigationOptions} from './pages/Class';
+import Image, {ImagePageNavigationOptions} from './pages/Image';
 
 import Welcome from './pages/Welcome';
 import Journey from './pages/Journey';
@@ -14,7 +15,7 @@ const TabNavigator = createBottomTabNavigator({
 });
 
 const config = {
-  initialRouteName: 'Class',
+  initialRouteName: 'Main',
   mode: 'card',
 };
 
@@ -30,6 +31,10 @@ const routes = {
   Class: {
     screen: Class,
     navigationOptions: ClassNavigationOptions,
+  },
+  Image: {
+    screen: Image,
+    navigationOptions: ImagePageNavigationOptions,
   },
 };
 

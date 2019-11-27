@@ -5,22 +5,13 @@ import {Title} from './styles';
 
 import List from '../../components/List';
 
-export default function Journey() {
+export default function Journey({navigation}) {
   const DATA = [
     {
       id: 1,
-      name: 'First Item',
-      description: 'description',
-    },
-    {
-      id: 2,
-      name: 'Second Item',
-      description: 'description',
-    },
-    {
-      id: 3,
-      name: 'Third Item',
-      description: 'description',
+      name: 'Algoritmo',
+      description:
+        'Embora as vezes não percebemos, utilizamos algoritmos no nosso dia-a-dia e não sabemos. Para a execução de alguma tarefa ou mesmo resolver algum problema, muitas vezes inconscientemente executamos algoritmos.',
     },
   ];
 
@@ -28,7 +19,7 @@ export default function Journey() {
     <Container>
       <Title>Jornada</Title>
 
-      <List data={DATA} />
+      <List namepage="ClassList" navigation={navigation} data={DATA} />
     </Container>
   );
 }

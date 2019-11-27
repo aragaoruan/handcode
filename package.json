@@ -21,6 +21,7 @@
     "react-navigation-tabs": "^2.6.0",
     "styled-components": "^4.4.1"
   },
+  
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",

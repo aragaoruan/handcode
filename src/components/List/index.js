@@ -5,9 +5,11 @@ import navigation from '../../config/NavigationService';
 
 import {ListItem} from './styles';
 
-export default function List({data, navigate}) {
+export default function List({data, navigation, namepage}) {
+  console.log(namepage);
+
   function handleRefreshRepository() {
-    console.log('FOI');
+    navigation.navigate(namepage);
   }
 
   return (

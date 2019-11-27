@@ -12,16 +12,18 @@ import {
   NameGlosario,
   TitleNameGlosario,
   TitleGlosario,
+  ButtonGlosario,
+  ContainerGlosario,
 } from './styles';
 
-const page = 'NEW PAGE';
+const page = 'AULA 1';
 export function ClassNavigationOptions() {
   return {
     headerTitle: page,
   };
 }
 
-export default function Class() {
+export default function Class({navigation}) {
   function UselessTextInput(props) {
     return (
       <TextInput
@@ -32,14 +34,15 @@ export default function Class() {
     );
   }
 
+  function pageImage() {
+    navigation.navigate('Image');
+  }
+
   return (
     <Container>
       <Description>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic
+        1 – pegar o chiclete 2 – retirar o papel 3 – mascar o chiclete 4 – jogar
+        o papel no lixo 5 – jogar o chiclete no lixo
       </Description>
 
       <Border>
@@ -53,12 +56,15 @@ export default function Class() {
       <Glosario>
         <TitleGlosario>Glosario</TitleGlosario>
 
-        <NameGlosario>
-          <TitleNameGlosario>echo :</TitleNameGlosario> print na tela
-        </NameGlosario>
-        <NameGlosario>
-          <TitleNameGlosario>echo :</TitleNameGlosario> print na tela
-        </NameGlosario>
+        <ContainerGlosario>
+          <NameGlosario>
+            <TitleNameGlosario>echo :</TitleNameGlosario>
+            print na tela
+          </NameGlosario>
+          <ButtonGlosario onPress={() => pageImage()}>
+            <NameButton>Sinal</NameButton>
+          </ButtonGlosario>
+        </ContainerGlosario>
       </Glosario>
 
       <Button>

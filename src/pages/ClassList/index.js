@@ -10,24 +10,18 @@ export function ClassListNavigationOptions() {
 
 import List from '../../components/List';
 
-export default function ClassList() {
+export default function ClassList({navigation}) {
   const DATA = [
     {
       id: 1,
-      name: 'First Item',
-      description: 'description',
-    },
-    {
-      id: 2,
-      name: 'Second Item',
-      description: 'description',
-    },
-    {
-      id: 3,
-      name: 'Third Item',
-      description: 'description',
+      name: 'Aula 1',
+      description: 'Algoritmo Recepcionista de Cinema',
     },
   ];
 
-  return <Container>{<List data={DATA} />}</Container>;
+  return (
+    <Container>
+      {<List namepage="Class" navigation={navigation} data={DATA} />}
+    </Container>
+  );
 }

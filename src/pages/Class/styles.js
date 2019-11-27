@@ -40,3 +40,17 @@ export const TitleGlosario = styled.Text`
   font-weight: bold;
   font-size: 20px;
 `;
+
+export const ButtonGlosario = styled.TouchableOpacity`
+  background: #6bd4c1;
+  margin-left: 10px;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 14px;
+  height: 30px;
+  width: 100px;
+`;
+export const ContainerGlosario = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
