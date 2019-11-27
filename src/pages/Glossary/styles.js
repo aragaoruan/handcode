@@ -16,13 +16,24 @@ export const Title = styled.Text.attrs({
 export const Search = styled.TextInput`
   font-size: 18px;
   border: 1px solid #ccc;
-  width: 100%;
+  flex: 1;
+  border-radius: 30px;
+  margin-right: 10px;
+  padding-left: 20px;
+  text-align: left;
 `;
 
 export const CheckSignal = styled.TouchableHighlight`
   background-color: ${colors.primary.darkColor};
   width: 30%;
   border-radius: 5px;
+`;
+
+export const SearchContainer = styled.View`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 `;
 
 export const ItemContainer = styled.View`

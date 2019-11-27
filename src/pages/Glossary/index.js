@@ -9,7 +9,10 @@ import {
   CheckSignal,
   CheckSignalText,
   ItemContainer,
+  SearchContainer,
 } from './styles';
+
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export function GlossaryNavigationOptions() {
   return {
@@ -48,7 +51,10 @@ export function Glossary({navigation}) {
 
   return (
     <Container>
-      <Search placeholder="Digite algo" />
+      <SearchContainer>
+        <Search placeholder="Digite algo" />
+        <Icon name="search" size={34} color="#ccc" />
+      </SearchContainer>
       <FlatList
         data={data}
         renderItem={({item}) => (
